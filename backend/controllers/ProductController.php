@@ -2,11 +2,13 @@
 
 namespace backend\controllers;
 
+use app\models\Media;
 use app\models\Products;
 use app\models\ProductsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * ProductController implements the CRUD actions for Products model.
@@ -16,6 +18,7 @@ class ProductController extends Controller
     /**
      * @inheritDoc
      */
+
     public function behaviors()
     {
         return array_merge(
@@ -74,16 +77,20 @@ class ProductController extends Controller
 
         if ($this->request->isPost) {
             if ($model->load($this->request->post()) && $model->save()) {
+
                 return $this->redirect(['view', 'id' => $model->id]);
             }
         } else {
             $model->loadDefaultValues();
         }
 
+
+
         return $this->render('create', [
             'model' => $model,
         ]);
     }
+
 
     /**
      * Updates an existing Products model.

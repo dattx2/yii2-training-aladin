@@ -2,6 +2,7 @@
 
 namespace backend\controllers;
 
+use app\models\Media;
 use common\models\LoginForm;
 use Yii;
 use yii\filters\VerbFilter;
@@ -71,6 +72,7 @@ class SiteController extends Controller
      *
      * @return string|Response
      */
+
     public function actionLogin()
     {
         $this->layout='login';

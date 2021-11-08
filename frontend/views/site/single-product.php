@@ -140,15 +140,8 @@
                     <div class="mainmenu">
                         <nav>
                             <ul>
-                                <li><a href="index.html">Home</a>
-                                    <div class="sub-menu">
-                                                <span>
-                                                    <a href="index.html">Home version 1</a>
-                                                </span>
-                                        <span>
-                                                    <a href="index-2.html">Home version 2</a>
-                                                </span>
-                                    </div>
+                                <li><a href="index">Home</a>
+
                                 </li>
                                 <li class="mega-women"><a href="shop.html">Women</a>
                                     <div class="mega-menu women">
@@ -431,39 +424,39 @@
                     <div class="single-pro-main-image tab-pane" id="pro-large-img-5">
                         <a href="#"><img class="optima_zoom" src="img/product/9.png" data-zoom-image="img/product/9.png" alt="optima"/></a>
                     </div>
-                    <?php }?>
+
                 </div>
                 <div class="product-page-slider">
                     <div class="single-product-slider">
                         <a href="#pro-large-img-1" data-toggle="tab">
-                            <img src="img/product/28.png" alt="">
+                            <img src="<?=$values['Link'] ?>" alt="">
                         </a>
                     </div>
                     <div class="single-product-slider">
                         <a href="#pro-large-img-2" data-toggle="tab">
-                            <img src="img/product/30.png" alt="">
+                            <img src="<?=$values['Link'] ?>" alt="">
                         </a>
                     </div>
                     <div class="single-product-slider">
                         <a href="#pro-large-img-3" data-toggle="tab">
-                            <img src="img/product/29.png" alt="">
+                            <img src="<?=$values['Link'] ?>" alt="">
                         </a>
                     </div>
                     <div class="single-product-slider">
                         <a href="#pro-large-img-4" data-toggle="tab">
-                            <img src="img/product/31.png" alt="">
+                            <img src="<?=$values['Link'] ?>" alt="">
                         </a>
                     </div>
                     <div class="single-product-slider">
                         <a href="#pro-large-img-5" data-toggle="tab">
-                            <img src="img/product/29.png" alt="">
+                            <img src="<?=$values['Link'] ?>" alt="">
                         </a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="single-product-details">
-                    <a href="#" class="product-name">Fusce aliquam</a>
+                    <a href="#" class="product-name"><?=$values['name'] ?></a>
                     <div class="list-product-info">
                         <div class="price-rating">
                             <div class="ratings">
@@ -567,12 +560,14 @@
 
                     <!-- Tab panes -->
                     <div class="tab-content single-product-page">
-                        <div role="tabpanel" class="tab-pane fade in active" id="tab1">
+                        <div role="tabpanel" class=" active" id="tab1">
                             <div class="single-p-tab-content">
-                                <p>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer enim purus, posuere at ultricies eu, placerat a felis. Suspendisse aliquet urna pretium eros convallis interdum. Quisque in arcu id dui vulputate mollis eget non arcu. Aenean et nulla purus. Mauris vel tellus non nunc mattis lobortis. </p>
+<!--                                 Product Description-->
+                                <p><?=$values['Description']?></p>
+                                <?php };?>
                             </div>
                         </div>
-                        <div role="tabpanel" class="tab-pane fade" id="tab2">
+                        <div role="tabpanel" class="" id="tab2">
                             <div class="single-p-tab-content">
                                 <div class="row">
                                     <div class="col-md-5">
@@ -679,7 +674,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div role="tabpanel" class="tab-pane fade" id="tab3">
+                        <div role="tabpanel" class="" id="tab3">
                             <div class="single-p-tab-content">
                                 <div class="add-tab-title">
                                     <p> add your tag </p>
@@ -701,269 +696,7 @@
 </div>
 <!-- single product tab end -->
 <!-- upsell product area start-->
-<div class="upsell-product home2">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="product-title">
-                    <h2>upsell products</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="upsell-slider">
-                <div class="col-md-12">
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a href="single-product.html">
-                                <img src="img/product/25.png" alt="" class="primary-img">
-                                <img src="img/product/26.png" alt="" class="secondary-img">
-                            </a>
-                        </div>
-                        <div class="list-product-info">
-                            <div class="price-rating">
-                                <div class="ratings">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-o"></i>
-                                    <a href="#" class="review">1 Review(s)</a>
-                                    <a href="#" class="add-review">Add Your Review</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-price">
-                            <div class="product-name">
-                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
-                            </div>
-                            <div class="price-rating">
-                                <span>$170.00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a href="single-product.html">
-                                <img src="img/product/23.png" alt="" class="primary-img">
-                                <img src="img/product/24.png" alt="" class="secondary-img">
-                            </a>
-                        </div>
-                        <div class="list-product-info">
-                            <div class="price-rating">
-                                <div class="ratings">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-o"></i>
-                                    <a href="#" class="review">1 Review(s)</a>
-                                    <a href="#" class="add-review">Add Your Review</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-price">
-                            <div class="product-name">
-                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
-                            </div>
-                            <div class="price-rating">
-                                <span>$170.00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a href="single-product.html">
-                                <img src="img/product/21.png" alt="" class="primary-img">
-                                <img src="img/product/22.png" alt="" class="secondary-img">
-                            </a>
-                        </div>
-                        <div class="list-product-info">
-                            <div class="price-rating">
-                                <div class="ratings">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-o"></i>
-                                    <a href="#" class="review">1 Review(s)</a>
-                                    <a href="#" class="add-review">Add Your Review</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-price">
-                            <div class="product-name">
-                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
-                            </div>
-                            <div class="price-rating">
-                                <span>$170.00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a href="single-product.html">
-                                <img src="img/product/19.png" alt="" class="primary-img">
-                                <img src="img/product/20.png" alt="" class="secondary-img">
-                            </a>
-                        </div>
-                        <div class="list-product-info">
-                            <div class="price-rating">
-                                <div class="ratings">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-o"></i>
-                                    <a href="#" class="review">1 Review(s)</a>
-                                    <a href="#" class="add-review">Add Your Review</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-price">
-                            <div class="product-name">
-                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
-                            </div>
-                            <div class="price-rating">
-                                <span>$170.00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a href="single-product.html">
-                                <img src="img/product/17.png" alt="" class="primary-img">
-                                <img src="img/product/18.png" alt="" class="secondary-img">
-                            </a>
-                        </div>
-                        <div class="list-product-info">
-                            <div class="price-rating">
-                                <div class="ratings">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-o"></i>
-                                    <a href="#" class="review">1 Review(s)</a>
-                                    <a href="#" class="add-review">Add Your Review</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-price">
-                            <div class="product-name">
-                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
-                            </div>
-                            <div class="price-rating">
-                                <span>$170.00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a href="single-product.html">
-                                <img src="img/product/15.png" alt="" class="primary-img">
-                                <img src="img/product/16.png" alt="" class="secondary-img">
-                            </a>
-                        </div>
-                        <div class="list-product-info">
-                            <div class="price-rating">
-                                <div class="ratings">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-o"></i>
-                                    <a href="#" class="review">1 Review(s)</a>
-                                    <a href="#" class="add-review">Add Your Review</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-price">
-                            <div class="product-name">
-                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
-                            </div>
-                            <div class="price-rating">
-                                <span>$170.00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a href="single-product.html">
-                                <img src="img/product/13.png" alt="" class="primary-img">
-                                <img src="img/product/14.png" alt="" class="secondary-img">
-                            </a>
-                        </div>
-                        <div class="list-product-info">
-                            <div class="price-rating">
-                                <div class="ratings">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-o"></i>
-                                    <a href="#" class="review">1 Review(s)</a>
-                                    <a href="#" class="add-review">Add Your Review</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-price">
-                            <div class="product-name">
-                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
-                            </div>
-                            <div class="price-rating">
-                                <span>$170.00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a href="single-product.html">
-                                <img src="img/product/11.png" alt="" class="primary-img">
-                                <img src="img/product/12.png" alt="" class="secondary-img">
-                            </a>
-                        </div>
-                        <div class="list-product-info">
-                            <div class="price-rating">
-                                <div class="ratings">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-o"></i>
-                                    <a href="#" class="review">1 Review(s)</a>
-                                    <a href="#" class="add-review">Add Your Review</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-price">
-                            <div class="product-name">
-                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
-                            </div>
-                            <div class="price-rating">
-                                <span>$170.00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 <!-- upsell product area end-->
 <!-- related product area start-->
 <div class="related-product home2">
@@ -977,17 +710,28 @@
         </div>
         <div class="row">
             <div class="related-slider">
+                <?php
+
+                foreach ($data_category as $data)
+                {
+                    // so sanh trung lap
+                    if ($data['id']==$values['id']){
+                        continue;
+                    }
+
+
+                ?>
                 <div class="col-md-12">
                     <div class="single-product">
                         <div class="product-img">
                             <a href="single-product.html">
-                                <img src="img/product/25.png" alt="" class="primary-img">
-                                <img src="img/product/26.png" alt="" class="secondary-img">
+                                <img src="<?=$data['Link']?>" alt="" class="primary-img">
+                                <img src="<?=$data['Link']?>" alt="" class="secondary-img">
                             </a>
                         </div>
                         <div class="product-price">
                             <div class="product-name">
-                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
+                                <a href="single-product?id=<?=$data['id'] ?>" title="Fusce aliquam"><?=$data['name']?></a>
                             </div>
                             <div class="price-rating">
                                 <span>$170.00</span>
@@ -995,132 +739,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12">
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a href="single-product.html">
-                                <img src="img/product/23.png" alt="" class="primary-img">
-                                <img src="img/product/24.png" alt="" class="secondary-img">
-                            </a>
-                        </div>
-                        <div class="product-price">
-                            <div class="product-name">
-                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
-                            </div>
-                            <div class="price-rating">
-                                <span>$170.00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a href="single-product.html">
-                                <img src="img/product/21.png" alt="" class="primary-img">
-                                <img src="img/product/22.png" alt="" class="secondary-img">
-                            </a>
-                        </div>
-                        <div class="product-price">
-                            <div class="product-name">
-                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
-                            </div>
-                            <div class="price-rating">
-                                <span>$170.00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a href="single-product.html">
-                                <img src="img/product/19.png" alt="" class="primary-img">
-                                <img src="img/product/20.png" alt="" class="secondary-img">
-                            </a>
-                        </div>
-                        <div class="product-price">
-                            <div class="product-name">
-                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
-                            </div>
-                            <div class="price-rating">
-                                <span>$170.00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a href="single-product.html">
-                                <img src="img/product/17.png" alt="" class="primary-img">
-                                <img src="img/product/18.png" alt="" class="secondary-img">
-                            </a>
-                        </div>
-                        <div class="product-price">
-                            <div class="product-name">
-                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
-                            </div>
-                            <div class="price-rating">
-                                <span>$170.00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a href="single-product.html">
-                                <img src="img/product/15.png" alt="" class="primary-img">
-                                <img src="img/product/16.png" alt="" class="secondary-img">
-                            </a>
-                        </div>
-                        <div class="product-price">
-                            <div class="product-name">
-                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
-                            </div>
-                            <div class="price-rating">
-                                <span>$170.00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a href="single-product.html">
-                                <img src="img/product/13.png" alt="" class="primary-img">
-                                <img src="img/product/14.png" alt="" class="secondary-img">
-                            </a>
-                        </div>
-                        <div class="product-price">
-                            <div class="product-name">
-                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
-                            </div>
-                            <div class="price-rating">
-                                <span>$170.00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="single-product">
-                        <div class="product-img">
-                            <a href="single-product.html">
-                                <img src="img/product/11.png" alt="" class="primary-img">
-                                <img src="img/product/12.png" alt="" class="secondary-img">
-                            </a>
-                        </div>
-                        <div class="product-price">
-                            <div class="product-name">
-                                <a href="single-product.html" title="Fusce aliquam">Fusce aliquam</a>
-                            </div>
-                            <div class="price-rating">
-                                <span>$170.00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<?php }?>
             </div>
         </div>
     </div>

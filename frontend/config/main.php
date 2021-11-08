@@ -12,7 +12,12 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
+
+        'session' => [ // set timeout seesion
+            'timeout'=>10000,
+        ],
         'request' => [
+            'enableCsrfValidation' => false,
             'csrfParam' => '_csrf-frontend',
         ],
         'user' => [

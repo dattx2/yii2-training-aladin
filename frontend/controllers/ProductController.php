@@ -1,6 +1,6 @@
 <?php
 
-namespace app\controllers;
+namespace frontend\controllers;
 
 use app\models\Products;
 use app\models\ProductsSearch;
@@ -24,11 +24,16 @@ class ProductController extends Controller
                 'verbs' => [
                     'class' => VerbFilter::className(),
                     'actions' => [
-                        'delete' => ['POST'],
+                        //'delete' => ['POST'],
                     ],
                 ],
             ]
         );
+    }
+    public function beforeAction($action)
+    {
+        $this->enableCsrfValidation = false;
+        return parent::beforeAction($action);
     }
 
     /**
@@ -37,12 +42,12 @@ class ProductController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new ProductsSearch();
-        $dataProvider = $searchModel->search($this->request->queryParams);
+        $Model = new Products;
+        $Model = Products::find();
+
 
         return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
+            'searchModel' => $Model,
         ]);
     }
 

@@ -62,4 +62,9 @@ class Products extends \yii\db\ActiveRecord
         $data = Products::find()->where(['id'=>$id])->asArray()->all();
         return $data;
     }
+    public function getProductfromCate($id){
+        $data = Products::find()->where(['category'=>$id])->asArray()->all();
+        //$s =\app\models\Products::find()->asArray()->where(['category'=>$id])->all();
+        return $data;
+    }
 }

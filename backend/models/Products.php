@@ -18,6 +18,7 @@ use Yii;
  */
 class Products extends \yii\db\ActiveRecord
 {
+    const SCENARIO_CREATE = 'create';
     /**
      * {@inheritdoc}
      */
@@ -34,6 +35,13 @@ class Products extends \yii\db\ActiveRecord
         return [
             [['category', 'name', 'Description', 'Link', 'start_date', 'end_date', 'statsu'], 'string', 'max' => 10000],
         ];
+    }
+
+    public function scenarios()
+    {
+        $scenarios = parent::scenarios();
+        $scenarios['create'] = ['Name','Last_Name','Email'];
+        return $scenarios;
     }
 
     /**

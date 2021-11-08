@@ -3,6 +3,7 @@
 namespace frontend\controllers;
 
 use app\models\Products;
+use app\models\User;
 use backend\models\Categories;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
@@ -84,6 +85,19 @@ class SiteController extends Controller
         $data = ArrayHelper::map($gdata,'name','name');
         $data_product = \app\models\Products::find()->asArray()->all();
 
+        $cookies = Yii::$app->response->cookies;
+
+        $cookies->add(new \yii\web\Cookie([
+            'name' => 'username',
+            'value' => 'xyz',
+            'expire' => time() + 86400 * 365,
+        ]));
+        $cookies1 = Yii::$app->request->cookies;
+
+        if ($cookies1->has('abc'))
+            $cookieValue = $cookies1->getValue('abc');
+
+        echo 'value : '.$cookieValue;
 
 
 
@@ -97,10 +111,29 @@ class SiteController extends Controller
         $data_product = \app\models\Products::find()->where(['category'=>$name])->asArray()->all();
         return $this->render('search',['data'=>$data,'product'=>$data_product]);
     }
+    // chi tiet san phma
     public function actionSingleProduct($id){
         $data = new \app\models\Products();
-        $binding = $data->getProductfromid($id);
-        return $this->render('single-product',['binding'=>$binding]);
+        $data_product = $data->getProductfromid($id);
+        foreach ($data_product as $value){
+            $name_category = $value['category'];
+
+        }
+        $data_category = \app\models\Products::find()->where(['category'=>$name_category])->asArray()->all();
+        //$data_category = $data->getProductfromCate($name_category);
+
+        return $this->render('single-product',['binding'=>$data_product,'data_category'=>$data_category]);
+    }
+    // tét cache, season
+    public function actionS_c(){
+        //$this->layout='s_c';
+        $model = new User();
+        return $this->render('s_c',['model'=>$model]);
+    }
+    public function actionS_clogout(){
+        //$this->layout='s_c';
+        $model = new User();
+        return $this->render('s_clogout',['model'=>$model]);
     }
 
     /**

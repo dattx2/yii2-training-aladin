@@ -81,6 +81,9 @@ AppAsset1::register($this);
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="index" class="nav-link">Home</a>
                 </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="http://localhost/yii2/frontend/web/" class="nav-link">Frontend</a>
+                </li>
 
             </ul>
 
@@ -290,7 +293,7 @@ AppAsset1::register($this);
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../product/index" class="nav-link">
+                                    <a href="http://localhost/yii2/backend/web/product/index" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Product</p>
                                     </a>
@@ -313,15 +316,15 @@ AppAsset1::register($this);
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-table"></i>
                                 <p>
-                                    Tables
+                                    Restfull
                                     <i class="fas fa-angle-left right"></i>
                                 </p>
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="pages/tables/simple.html" class="nav-link">
+                                    <a href="get/index" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Simple Tables</p>
+                                        <p>All product</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
